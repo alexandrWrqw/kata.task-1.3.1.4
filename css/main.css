@@ -1,1 +1,19 @@
-/*# sourceMappingURL=main.css.map */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+}/*# sourceMappingURL=main.css.map */
