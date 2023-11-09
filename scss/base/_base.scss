@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+.btn {
+    display: block;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    &--square {
+        background-color: #FF3E79;
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+
+        position: relative;
+
+        &:hover {
+            background-color: #9f2348;
+        }
+    }
+
+    &--burger-icon {
+        background: #FF3E79 url('./../img/icons/burger.svg') no-repeat 50% 50%;
+    }
+
+    &--repair-icon {
+        background: #FF3E79 url('./../img/icons/repair.svg') no-repeat 50% 50%;
+    }
+
+    &--status-icon {
+        background: #FF3E79 url('./../img/icons/status.svg') no-repeat 50% 50%;
+    }
+
+    &--phone-icon {
+        background: #FF3E79 url('./../img/icons/phone.svg') no-repeat 50% 50%;
+    }
+
+    &--mess-icon {
+        background: #FF3E79 url('./../img/icons/mess.svg') no-repeat 50% 50%;
+    }
+
+    &--reg-icon {
+        background: #FF3E79 url('./../img/icons/reg.svg') no-repeat 50% 50%;
+    }
+}

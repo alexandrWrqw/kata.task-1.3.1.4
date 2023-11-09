@@ -1,46 +1,5 @@
 @import './base/vars';
+@import './base/base';
+@import './blocks/header';
+@import './blocks/media';
 
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-.btn {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    cursor: pointer;
-    flex-shrink: 0;
-}
-
-.btn--square {
-    background-color: #FF3E79;
-    border-radius: 20px;
-    width: 40px;
-    height: 40px;
-
-    position: relative;
-
-    &:hover {
-        background-color: #9f2348;
-    }
-}
-
-.btn--burger-icon {
-    background: #FF3E79 url('./../img/icons/burger.svg') no-repeat 50% 50%;
-}
-
-.btn--repair-icon {
-    background: #FF3E79 url('./../img/icons/repair.svg') no-repeat 50% 50%;
-}
-
-.btn--status-icon {
-    background: #FF3E79 url('./../img/icons/status.svg') no-repeat 50% 50%;
-}
