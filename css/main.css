@@ -16,4 +16,27 @@ html {
   background-color: transparent;
   cursor: pointer;
   flex-shrink: 0;
+}
+
+.btn--square {
+  background-color: #FF3E79;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.btn--square:hover {
+  background-color: #9f2348;
+}
+
+.btn--burger-icon {
+  background: #FF3E79 url("./../img/icons/burger.svg") no-repeat 50% 50%;
+}
+
+.btn--repair-icon {
+  background: #FF3E79 url("./../img/icons/repair.svg") no-repeat 50% 50%;
+}
+
+.btn--status-icon {
+  background: #FF3E79 url("./../img/icons/status.svg") no-repeat 50% 50%;
 }/*# sourceMappingURL=main.css.map */
