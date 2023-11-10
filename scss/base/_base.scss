@@ -1,3 +1,42 @@
+@font-face {
+    font-family: 'TTLakes Regular';
+    src: url('./../fonts/TTLakes/TTLakes-Regular.eot');
+    src: url('./../fonts/TTLakes/TTLakes-Regular.eot?#iefix')
+            format('embedded-opentype'),
+         url('./../fonts/TTLakes/TTLakes-Regular.woff')
+            format('woff'),
+         url('./../fonts/TTLakes/TTLakes-Regular.ttf') 
+            format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTLakes Medium';
+    src: url('./../fonts/TTLakes/TTLakes-Medium.eot');
+    src: url('./../fonts/TTLakes/TTLakes-Medium.eot?#iefix')
+            format('embedded-opentype'),
+         url('./../fonts/TTLakes/TTLakes-Medium.woff')
+            format('woff'),
+         url('./../fonts/TTLakes/TTLakes-Medium.ttf') 
+            format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTLakes Bold';
+    src: url('./../fonts/TTLakes/TTLakes-Bold.eot');
+    src: url('./../fonts/TTLakes/TTLakes-Bold.eot?#iefix')
+            format('embedded-opentype'),
+         url('./../fonts/TTLakes/TTLakes-Bold.woff')
+            format('woff'),
+         url('./../fonts/TTLakes/TTLakes-Bold.ttf') 
+            format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -10,6 +49,22 @@ html {
 
 body {
     margin: 0;
+}
+
+main {
+    background-color: $mainBg;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 .btn {
@@ -35,27 +90,27 @@ body {
     }
 
     &--burger-icon {
-        background: #FF3E79 url('./../img/icons/burger.svg') no-repeat 50% 50%;
+        background: $btn url('./../img/icons/burger.svg') no-repeat 50% 50%;
     }
 
     &--repair-icon {
-        background: #FF3E79 url('./../img/icons/repair.svg') no-repeat 50% 50%;
+        background: $btn url('./../img/icons/repair.svg') no-repeat 50% 50%;
     }
 
     &--status-icon {
-        background: #FF3E79 url('./../img/icons/status.svg') no-repeat 50% 50%;
+        background: $btn url('./../img/icons/status.svg') no-repeat 50% 50%;
     }
 
     &--phone-icon {
-        background: #FF3E79 url('./../img/icons/phone.svg') no-repeat 50% 50%;
+        background: $btn url('./../img/icons/phone.svg') no-repeat 50% 50%;
     }
 
     &--mess-icon {
-        background: #FF3E79 url('./../img/icons/mess.svg') no-repeat 50% 50%;
+        background: $btn url('./../img/icons/mess.svg') no-repeat 50% 50%;
     }
 
     &--reg-icon {
-        background: #FF3E79 url('./../img/icons/reg.svg') no-repeat 50% 50%;
+        background: $btn url('./../img/icons/reg.svg') no-repeat 50% 50%;
     }
 }
 
@@ -63,4 +118,20 @@ body {
     display: flex;
     width: 152px;
     justify-content: space-between;
+}
+
+.title2 {
+    color: $textDark;
+    font-family: $bold;
+    font-size: 28px;
+    line-height: 142%;
+    letter-spacing: -0.6px;
+}
+
+.info-text {
+    color: $textDark;
+    font-family: $regular;
+    font-size: 14px;
+    line-height: 128%;
+    letter-spacing: 0.2px;
 }

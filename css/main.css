@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "TTLakes Regular";
+  src: url("./../fonts/TTLakes/TTLakes-Regular.eot");
+  src: url("./../fonts/TTLakes/TTLakes-Regular.eot?#iefix") format("embedded-opentype"), url("./../fonts/TTLakes/TTLakes-Regular.woff") format("woff"), url("./../fonts/TTLakes/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTLakes Medium";
+  src: url("./../fonts/TTLakes/TTLakes-Medium.eot");
+  src: url("./../fonts/TTLakes/TTLakes-Medium.eot?#iefix") format("embedded-opentype"), url("./../fonts/TTLakes/TTLakes-Medium.woff") format("woff"), url("./../fonts/TTLakes/TTLakes-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTLakes Bold";
+  src: url("./../fonts/TTLakes/TTLakes-Bold.eot");
+  src: url("./../fonts/TTLakes/TTLakes-Bold.eot?#iefix") format("embedded-opentype"), url("./../fonts/TTLakes/TTLakes-Bold.woff") format("woff"), url("./../fonts/TTLakes/TTLakes-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   box-sizing: border-box;
 }
@@ -10,6 +31,22 @@ html {
 
 body {
   margin: 0;
+}
+
+main {
+  background-color: #F8F8F8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 .btn {
@@ -56,6 +93,22 @@ body {
   justify-content: space-between;
 }
 
+.title2 {
+  color: #1B1C21;
+  font-family: "TTLakes Bold";
+  font-size: 28px;
+  line-height: 142%;
+  letter-spacing: -0.6px;
+}
+
+.info-text {
+  color: #1B1C21;
+  font-family: "TTLakes Regular";
+  font-size: 14px;
+  line-height: 128%;
+  letter-spacing: 0.2px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -88,6 +141,52 @@ body {
   margin-left: 16px;
 }
 
+.info-block {
+  padding: 24px 16px;
+}
+
+.info-block > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.info-block__content {
+  max-height: 90px;
+  overflow-y: hidden;
+}
+
+.info-block__btn-textshow {
+  font-family: "TTLakes Medium";
+  letter-spacing: -0.2px;
+  line-height: 150%;
+  display: flex;
+}
+.info-block__btn-textshow::before {
+  content: "";
+  display: block;
+  background: url("./../img/info-block/expand.svg") no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.info-block__img {
+  width: 100%;
+}
+
+.info-block__title {
+  position: relative;
+}
+.info-block__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -16px;
+  width: 4px;
+  height: 40px;
+  background-color: #41F6D7;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
 @media screen and (min-width: 320px) {
   .container {
     max-width: 767px;
@@ -106,5 +205,11 @@ body {
   .header__item--line:first-of-type {
     padding: 0;
     margin-left: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .info-block__img {
+    width: calc(100% + 32px);
+    transform: translateX(-16px);
   }
 }/*# sourceMappingURL=main.css.map */
