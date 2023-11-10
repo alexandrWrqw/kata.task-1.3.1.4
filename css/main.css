@@ -97,4 +97,14 @@ body {
   .container {
     max-width: 1119px;
   }
+}
+@media screen and (max-width: 768px) {
+  .buttons-contact,
+  .header__item--line:first-of-type::before {
+    display: none;
+  }
+  .header__item--line:first-of-type {
+    padding: 0;
+    margin-left: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */
