@@ -117,7 +117,7 @@ a {
   letter-spacing: -0.6px;
 }
 
-.info-text {
+.info-par {
   color: #1B1C21;
   font-family: "TTLakes Regular";
   font-size: 14px;
@@ -241,14 +241,17 @@ a {
 
 .info__text-wrapper {
   padding: 0 16px;
-}
-.info__text-wrapper > * {
-  margin-bottom: 16px;
+  flex: 0 0 50%;
 }
 
 .info__text {
   max-height: 90px;
   overflow-y: hidden;
+  margin-bottom: 10px;
+}
+
+.info__par:not(:last-child) {
+  margin-bottom: 18px;
 }
 
 .info__show-text {
@@ -276,6 +279,7 @@ a {
 
 .info__img {
   width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 320px) {
@@ -292,6 +296,9 @@ a {
   .header {
     display: none;
   }
+  .info__slider {
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 768px) {
   .buttons-contact,
@@ -302,6 +309,9 @@ a {
     padding: 0;
     margin-left: 16px;
   }
+  .info__text-wrapper {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (min-width: 768px) {
   .info__content {
@@ -309,6 +319,13 @@ a {
   }
   .info__img {
     margin-right: 16px;
+  }
+  .info__text {
+    max-height: 160px;
+    min-width: 312px;
+  }
+  .info__par {
+    line-height: 142%;
   }
 }
 @media screen and (max-width: 1120px) {
