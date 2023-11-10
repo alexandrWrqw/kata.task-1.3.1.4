@@ -10,6 +10,12 @@
         max-width: 1119px;
     }
 }
+
+@media screen and (min-width: 1119px) {
+    .header {
+        display: none;
+    }
+}
 // header
 @media screen and (max-width: 768px) {
     .buttons-contact,
@@ -22,10 +28,19 @@
         margin-left: 16px;
     }
 }
-// info-block
-@media screen and (max-width: 768px) {
+// info-block 
+@media screen and (min-width: 768px) {
+    .info-block__content {
+        display: flex;
+    } 
+
     .info-block__img {
-        width: calc(100% + 32px);
-        transform: translateX(-16px);
+        margin-right: 16px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .info-block__buttons-wrapper {
+        display: none;
     }
 }
