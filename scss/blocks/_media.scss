@@ -10,13 +10,13 @@
         max-width: 1119px;
     }
 }
-
+// header
 @media screen and (min-width: 1119px) {
     .header {
         display: none;
     }
 }
-// header
+
 @media screen and (max-width: 768px) {
     .buttons-contact,
     .header__item--line:first-of-type::before {
@@ -30,17 +30,17 @@
 }
 // info-block 
 @media screen and (min-width: 768px) {
-    .info-block__content {
+    .info__content {
         display: flex;
     } 
 
-    .info-block__img {
+    .info__img {
         margin-right: 16px;
     }
 }
 
 @media screen and (max-width: 1120px) {
-    .info-block__buttons-wrapper {
+    .info__buttons {
         display: none;
     }
 }
