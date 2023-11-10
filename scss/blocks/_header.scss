@@ -5,30 +5,28 @@
     padding: 19px 16px;
 }
 
-.header__item--margin {
-    margin-left: 20px;
-    margin-right: auto;
-}
-
-.header__item--buttons {
-    display: flex;
-    justify-content: center;
+.header__item--line {
     position: relative;
-    padding-left: 20px;
     margin-left: 15px;
+    padding-left: 20px;
 
     &::before {
         content: '';
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 0px;
+        left: 0;
         width: 2px;
         height: 32px;
-        background-color: #EAEAEA;
+        border-radius: 1px;
+        background-color: $lightBorder;
     }
 }
 
-.header__item--buttons *:not(:last-child) {
-    margin-right: 16px;
+.header__item--margin-auto {
+    margin-right: auto;
+}
+
+.header__item--margin-left {
+    margin-left: 16px;
 }

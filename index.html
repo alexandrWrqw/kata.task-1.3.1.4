@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -11,17 +11,19 @@
 <body>
     <div class="container">
         <header class="header">
-            <button class="btn btn--square btn--burger-icon header__item"></button>
-            <img class="header__item header__item--margin" src="./img/logo/logo.svg" alt="logo CPS" aria-hidden="true">
-            <!-- <div class="header__item">
-                <button class="btn btn--square btn--phone-icon"></button>
-                <button class="btn btn--square btn--mess-icon"></button>
-                <button class="btn btn--square btn--reg-icon"></button>
-            </div> -->
-            <div class="header__item header__item--buttons">
-                <button class="btn btn--square btn--repair-icon"></button>
-                <button class="btn btn--square btn--status-icon"></button>
+            <button class="btn btn--square btn--burger-icon" type="button"></button>
+            <div class="header__item--line header__item--margin-auto">
+                <img src="./img/logo/logo.svg" alt="logo CPS" aria-hidden="true">
             </div>
+            <div class="buttons-contact">  <!-- Используюется повторно -->
+                <button class="btn btn--square btn--phone-icon" type="button"></button>
+                <button class="btn btn--square btn--mess-icon" type="button"></button>
+                <button class="btn btn--square btn--reg-icon" type="button"></button>
+            </div>
+            <div class="header__item--line">
+                <button class="btn btn--square btn--repair-icon" type="button"></button>
+            </div>
+            <button class="btn btn--square btn--status-icon header__item--margin-left" type="button"></button>
         </header>
     </div>
 </body>

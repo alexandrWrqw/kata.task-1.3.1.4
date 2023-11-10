@@ -23,7 +23,6 @@ body {
   flex-shrink: 0;
 }
 .btn--square {
-  background-color: #FF3E79;
   border-radius: 20px;
   width: 40px;
   height: 40px;
@@ -51,6 +50,12 @@ body {
   background: #FF3E79 url("./../img/icons/reg.svg") no-repeat 50% 50%;
 }
 
+.buttons-contact {
+  display: flex;
+  width: 152px;
+  justify-content: space-between;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -58,31 +63,29 @@ body {
   padding: 19px 16px;
 }
 
-.header__item--margin {
-  margin-left: 20px;
-  margin-right: auto;
-}
-
-.header__item--buttons {
-  display: flex;
-  justify-content: center;
+.header__item--line {
   position: relative;
-  padding-left: 20px;
   margin-left: 15px;
+  padding-left: 20px;
 }
-.header__item--buttons::before {
+.header__item--line::before {
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 0px;
+  left: 0;
   width: 2px;
   height: 32px;
+  border-radius: 1px;
   background-color: #EAEAEA;
 }
 
-.header__item--buttons *:not(:last-child) {
-  margin-right: 16px;
+.header__item--margin-auto {
+  margin-right: auto;
+}
+
+.header__item--margin-left {
+  margin-left: 16px;
 }
 
 @media screen and (min-width: 320px) {
