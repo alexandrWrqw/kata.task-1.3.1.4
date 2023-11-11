@@ -30,6 +30,7 @@ html {
 }
 
 body {
+  -webkit-tap-highlight-color: transparent;
   margin: 0;
 }
 
@@ -138,6 +139,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 19px 16px;
+  border-bottom: 1px solid #D9FFF5;
 }
 
 .header__item--line {
