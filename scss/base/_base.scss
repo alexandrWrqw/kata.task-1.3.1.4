@@ -1,29 +1,29 @@
 @font-face {
     font-family: 'TTLakes Regular';
-    src: url('./../fonts/TTLakes/TTLakes-Regular.eot');
-    src: url('./../fonts/TTLakes/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-        url('./../fonts/TTLakes/TTLakes-Regular.woff') format('woff'),
-        url('./../fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
+    src: url('./../fonts/TTLakes-Regular.eot');
+    src: url('./../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/TTLakes-Regular.woff') format('woff'),
+        url('./../fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TTLakes Medium';
-    src: url('./../fonts/TTLakes/TTLakes-Medium.eot');
-    src: url('./../fonts/TTLakes/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-        url('./../fonts/TTLakes/TTLakes-Medium.woff') format('woff'),
-        url('./../fonts/TTLakes/TTLakes-Medium.ttf') format('truetype');
+    src: url('./../fonts/TTLakes-Medium.eot');
+    src: url('./../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/TTLakes-Medium.woff') format('woff'),
+        url('./../fonts/TTLakes-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TTLakes Bold';
-    src: url('./../fonts/TTLakes/TTLakes-Bold.eot');
-    src: url('./../fonts/TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-        url('./../fonts/TTLakes/TTLakes-Bold.woff') format('woff'),
-        url('./../fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
+    src: url('./../fonts/TTLakes-Bold.eot');
+    src: url('./../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/TTLakes-Bold.woff') format('woff'),
+        url('./../fonts/TTLakes-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -85,7 +85,7 @@ a {
     cursor: pointer;
     flex-shrink: 0;
 
-    &--square {
+    &--circle {
         border-radius: 20px;
         width: 40px;
         height: 40px;
@@ -133,7 +133,7 @@ a {
     justify-content: space-between;
 }
 
-.title2 {
+.title {
     color: $textDark;
     font-family: $bold;
     font-size: 28px;

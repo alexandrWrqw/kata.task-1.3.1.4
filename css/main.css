@@ -1,21 +1,21 @@
 @font-face {
   font-family: "TTLakes Regular";
-  src: url("./../fonts/TTLakes/TTLakes-Regular.eot");
-  src: url("./../fonts/TTLakes/TTLakes-Regular.eot?#iefix") format("embedded-opentype"), url("./../fonts/TTLakes/TTLakes-Regular.woff") format("woff"), url("./../fonts/TTLakes/TTLakes-Regular.ttf") format("truetype");
+  src: url("./../fonts/TTLakes-Regular.eot");
+  src: url("./../fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"), url("./../fonts/TTLakes-Regular.woff") format("woff"), url("./../fonts/TTLakes-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "TTLakes Medium";
-  src: url("./../fonts/TTLakes/TTLakes-Medium.eot");
-  src: url("./../fonts/TTLakes/TTLakes-Medium.eot?#iefix") format("embedded-opentype"), url("./../fonts/TTLakes/TTLakes-Medium.woff") format("woff"), url("./../fonts/TTLakes/TTLakes-Medium.ttf") format("truetype");
+  src: url("./../fonts/TTLakes-Medium.eot");
+  src: url("./../fonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"), url("./../fonts/TTLakes-Medium.woff") format("woff"), url("./../fonts/TTLakes-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "TTLakes Bold";
-  src: url("./../fonts/TTLakes/TTLakes-Bold.eot");
-  src: url("./../fonts/TTLakes/TTLakes-Bold.eot?#iefix") format("embedded-opentype"), url("./../fonts/TTLakes/TTLakes-Bold.woff") format("woff"), url("./../fonts/TTLakes/TTLakes-Bold.ttf") format("truetype");
+  src: url("./../fonts/TTLakes-Bold.eot");
+  src: url("./../fonts/TTLakes-Bold.eot?#iefix") format("embedded-opentype"), url("./../fonts/TTLakes-Bold.woff") format("woff"), url("./../fonts/TTLakes-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -76,16 +76,16 @@ a {
   cursor: pointer;
   flex-shrink: 0;
 }
-.btn--square {
+.btn--circle {
   border-radius: 20px;
   width: 40px;
   height: 40px;
   position: relative;
 }
-.btn--square:hover {
+.btn--circle:hover {
   background-color: #9f2348;
 }
-.btn--square:focus {
+.btn--circle:focus {
   outline: 2px solid #FF3E79;
   outline-offset: 2px;
 }
@@ -114,7 +114,7 @@ a {
   justify-content: space-between;
 }
 
-.title2 {
+.title {
   color: #1B1C21;
   font-family: "TTLakes Bold";
   font-size: 28px;
@@ -254,6 +254,7 @@ a {
   outline-offset: -1px;
 }
 .info__link--active {
+  background-color: #fff;
   border: 2px solid #B8FFEC;
 }
 

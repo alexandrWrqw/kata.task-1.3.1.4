@@ -1,12 +1,13 @@
 .info {
     padding: 24px 0;
 }
+
 // header 
 .info__header {
     padding: 0 16px;
 
-    & > * {
-        margin-bottom: 24px; 
+    &>* {
+        margin-bottom: 24px;
     }
 }
 
@@ -90,9 +91,11 @@
     }
 
     &--active {
+        background-color: #fff;
         border: 2px solid #B8FFEC;
     }
 }
+
 // article 
 .info__text-wrapper {
     padding: 0 16px;
@@ -115,7 +118,7 @@
     letter-spacing: -0.2px;
     line-height: 150%;
     display: flex;
-    padding: 0 5px; 
+    padding: 0 5px;
 
     &::before {
         content: '';
@@ -127,7 +130,7 @@
     }
 
     &:hover {
-       color: $darkHover;
+        color: $darkHover;
     }
 
     &:focus {
