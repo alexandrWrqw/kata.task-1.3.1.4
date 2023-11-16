@@ -236,6 +236,9 @@ a {
   width: 100%;
   overflow-x: scroll;
 }
+.info__slider::-webkit-scrollbar {
+  width: 0;
+}
 
 .info__link {
   display: block;
