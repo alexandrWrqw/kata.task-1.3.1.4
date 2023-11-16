@@ -33,7 +33,7 @@
 
 @media screen and (max-width: $tablet) {
 
-    .buttons-contact,
+    .header__buttons-contact,
     .header__item--line:first-of-type::before {
         display: none;
     }

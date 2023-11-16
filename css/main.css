@@ -75,6 +75,7 @@ a {
   background-color: transparent;
   cursor: pointer;
   flex-shrink: 0;
+  transition: background-color 0.1s ease-in;
 }
 .btn--circle {
   border-radius: 20px;
@@ -235,9 +236,6 @@ a {
   width: 100%;
   overflow-x: scroll;
 }
-.info__slider::-webkit-scrollbar {
-  width: 0;
-}
 
 .info__link {
   display: block;
@@ -314,6 +312,17 @@ a {
   width: 320px;
   padding: 18px 24px;
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+.sidebar::-webkit-scrollbar {
+  width: 0;
 }
 
 .sidebar__header {
@@ -322,10 +331,19 @@ a {
   align-items: center;
   margin-bottom: 40px;
 }
+@media screen and (max-height: 750px) {
+  .sidebar__header {
+    margin-bottom: 20px;
+  }
+}
 
 .sidebar__logo {
   margin-right: auto;
   margin-left: 16px;
+}
+
+.sidebar__nav {
+  margin-bottom: auto;
 }
 
 .sidebar__item:not(:last-child) {
@@ -388,6 +406,66 @@ a {
   border-radius: 6px;
 }
 
+.sidebar__footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.sidebar__contacts {
+  margin: 16px 0 40px 0;
+}
+
+.sidebar__mail {
+  display: block;
+  color: #1B1C21;
+  font-family: "TTLakes Medium";
+  line-height: 150%;
+  letter-spacing: -0.2px;
+  margin-bottom: 12px;
+}
+.sidebar__mail:hover {
+  text-decoration: underline;
+}
+.sidebar__mail:focus {
+  outline: 1px solid #797a7d;
+  border-radius: 6px;
+}
+
+.sidebar__tel {
+  display: block;
+  color: #1B1C21;
+  font-family: "TTLakes Bold";
+  font-size: 24px;
+  line-height: 133.33%;
+  letter-spacing: -0.6px;
+}
+.sidebar__tel:focus {
+  outline: 1px solid #797a7d;
+  border-radius: 6px;
+}
+
+.sidebar__lang-list {
+  display: flex;
+  gap: 7px;
+}
+
+.sidebar__lang-btn {
+  color: #1B1C21;
+  font-family: "TTLakes Medium";
+  line-height: 150%;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+}
+.sidebar__lang-btn--active {
+  color: #7E7E82;
+  pointer-events: none;
+}
+.sidebar__lang-btn:focus {
+  outline: 1px solid #797a7d;
+  border-radius: 6px;
+}
+
 @media screen and (min-width: 320px) {
   .container {
     max-width: 767px;
@@ -414,7 +492,7 @@ a {
   }
 }
 @media screen and (max-width: 768px) {
-  .buttons-contact,
+  .header__buttons-contact,
   .header__item--line:first-of-type::before {
     display: none;
   }

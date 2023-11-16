@@ -5,6 +5,20 @@
         16px 0px 52px 0px rgba(14, 24, 80, 0.20),
         -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
 }
 
 // header
@@ -13,6 +27,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+
+    @media screen and (max-height: 750px) {
+        margin-bottom: 20px;
+    }
 }
 
 .sidebar__logo {
@@ -20,7 +38,11 @@
     margin-left: 16px;
 }
 
-// list
+// nav
+.sidebar__nav {
+    margin-bottom: auto;
+}
+
 .sidebar__item:not(:last-child) {
     margin-bottom: 20px;
 }
@@ -70,7 +92,9 @@
         border-radius: 2px 4px 2px 0;
         opacity: 0;
 
-        transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+        transition:
+            opacity 0.3s ease-in,
+            transform 0.3s ease-in;
     }
 
     &:hover {
@@ -81,6 +105,73 @@
             opacity: 1;
             transform: translateX(0) translateY(-50%) rotate(45deg);
         }
+    }
+
+    &:focus {
+        outline: 1px solid $darkHover;
+        border-radius: 6px;
+    }
+}
+
+// footer 
+.sidebar__footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.sidebar__contacts {
+    margin: 16px 0 40px 0;
+}
+
+.sidebar__mail {
+    display: block;
+    color: $textDark;
+    font-family: 'TTLakes Medium';
+    line-height: 150%;
+    letter-spacing: -0.2px;
+
+    margin-bottom: 12px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:focus {
+        outline: 1px solid $darkHover;
+        border-radius: 6px;
+    }
+}
+
+.sidebar__tel {
+    display: block;
+    color: $textDark;
+    font-family: 'TTLakes Bold';
+    font-size: 24px;
+    line-height: 133.33%;
+    letter-spacing: -0.6px;
+
+    &:focus {
+        outline: 1px solid $darkHover;
+        border-radius: 6px;
+    }
+}
+
+.sidebar__lang-list {
+    display: flex;
+    gap: 7px;
+}
+
+.sidebar__lang-btn {
+    color: $textDark;
+    font-family: 'TTLakes Medium';
+    line-height: 150%;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+
+    &--active {
+        color: $textLight;
+        pointer-events: none;
     }
 
     &:focus {
