@@ -125,6 +125,14 @@ a {
     &--reg-icon {
         background: $btn url('./../img/icons/reg.svg') no-repeat 50% 50%;
     }
+
+    &--close-icon {
+        background: $btn url('./../img/icons/close.svg') no-repeat 50% 50%;
+    }
+
+    &--search-icon {
+        background: $btn url('./../img/icons/search.svg') no-repeat 50% 50%;
+    }
 }
 
 .buttons-contact {
