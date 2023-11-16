@@ -461,6 +461,9 @@ a {
   color: #7E7E82;
   pointer-events: none;
 }
+.sidebar__lang-btn:hover {
+  color: #7E7E82;
+}
 .sidebar__lang-btn:focus {
   outline: 1px solid #797a7d;
   border-radius: 6px;
