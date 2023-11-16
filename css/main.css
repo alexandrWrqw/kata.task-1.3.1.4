@@ -315,8 +315,7 @@ a {
   width: 320px;
   padding: 18px 24px;
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-  position: sticky;
-  float: left;
+  position: fixed;
   height: 100vh;
   display: flex;
   flex-direction: column;
