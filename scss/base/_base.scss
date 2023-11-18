@@ -71,8 +71,18 @@ a {
     color: inherit;
 }
 
+address {
+    font-style: normal;
+    font-weight:normal;
+}
+
 .container {
     margin: 0 auto;
+}
+
+// BEM blocks
+.logo {
+    margin-right: auto;
 }
 
 .btn {
@@ -140,6 +150,33 @@ a {
     display: flex;
     width: 152px;
     justify-content: space-between;
+}
+
+.lang-list {
+    display: flex;
+    gap: 7px;
+
+    &__btn {
+        color: $textDark;
+        font-family: 'TTLakes Medium';
+        line-height: 150%;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+    
+        &--active {
+            color: $textLight;
+            pointer-events: none;
+        }
+    
+        &:hover {
+            color: $textLight;
+        }
+    
+        &:focus {
+            outline: 1px solid $darkHover;
+            border-radius: 6px;
+        }
+    }
 }
 
 .title {

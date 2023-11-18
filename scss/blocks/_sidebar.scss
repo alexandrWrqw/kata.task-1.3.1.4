@@ -31,84 +31,13 @@
     }
 }
 
-.sidebar__logo {
-    margin-right: auto;
+.sidebar__logo--margin-left {
     margin-left: 16px;
 }
 
 // nav
 .sidebar__nav {
     margin-bottom: auto;
-}
-
-.sidebar__item:not(:last-child) {
-    margin-bottom: 20px;
-}
-
-.sidebar__item--active {
-    position: relative;
-    pointer-events: none;
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 2px;
-        left: -24px;
-        width: 4px;
-        height: 32px;
-        background-color: #41F6D7;
-        border-bottom-right-radius: 5px;
-        border-top-right-radius: 5px;
-    }
-
-    & .sidebar__link {
-        color: $textLight;
-    }
-}
-
-.sidebar__link {
-    display: block;
-    color: $textDark;
-    font-family: 'TTLakes Medium';
-    line-height: 150%;
-    letter-spacing: -0.2px;
-    padding: 4px 0;
-    position: relative;
-
-    transition: background-color 0.1s ease-in;
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: 5px;
-        height: 22px;
-        width: 22px;
-        transform: translateX(-60px) translateY(-50%) rotate(45deg);
-        border-top: 2px solid #41F6D7;
-        border-right: 2px solid #41F6D7;
-        border-radius: 2px 4px 2px 0;
-        opacity: 0;
-
-        transition:
-            opacity 0.3s ease-in,
-            transform 0.3s ease-in;
-    }
-
-    &:hover {
-        background-color: #41f6d828;
-        border-radius: 6px;
-
-        &::after {
-            opacity: 1;
-            transform: translateX(0) translateY(-50%) rotate(45deg);
-        }
-    }
-
-    &:focus {
-        outline: 1px solid $darkHover;
-        border-radius: 6px;
-    }
 }
 
 // footer 
@@ -148,33 +77,6 @@
     font-size: 24px;
     line-height: 133.33%;
     letter-spacing: -0.6px;
-
-    &:focus {
-        outline: 1px solid $darkHover;
-        border-radius: 6px;
-    }
-}
-
-.sidebar__lang-list {
-    display: flex;
-    gap: 7px;
-}
-
-.sidebar__lang-btn {
-    color: $textDark;
-    font-family: 'TTLakes Medium';
-    line-height: 150%;
-    letter-spacing: -0.2px;
-    text-transform: uppercase;
-
-    &--active {
-        color: $textLight;
-        pointer-events: none;
-    }
-
-    &:hover {
-        color: $textLight;
-    }
 
     &:focus {
         outline: 1px solid $darkHover;
