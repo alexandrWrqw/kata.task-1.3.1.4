@@ -32,12 +32,6 @@ html {
     box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
 body {
     -webkit-tap-highlight-color: transparent;
     margin: 0;
@@ -47,37 +41,38 @@ main {
     background-color: $mainBg;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+// resets 
+.title-reset,
+.par-reset {
     margin: 0;
     font-size: inherit;
     font-weight: inherit;
 }
 
-ul,
-li {
+.list-reset {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-a {
+.link-reset {
     text-decoration: none;
     color: inherit;
 }
 
-address {
+.address-reset {
     font-style: normal;
-    font-weight:normal;
-}
-
-.container {
-    margin: 0 auto;
+    font-weight: normal;
 }
 
 // BEM blocks
@@ -162,35 +157,19 @@ address {
         line-height: 150%;
         letter-spacing: -0.2px;
         text-transform: uppercase;
-    
+
         &--active {
             color: $textLight;
             pointer-events: none;
         }
-    
+
         &:hover {
             color: $textLight;
         }
-    
+
         &:focus {
             outline: 1px solid $darkHover;
             border-radius: 6px;
         }
     }
-}
-
-.title {
-    color: $textDark;
-    font-family: $bold;
-    font-size: 28px;
-    line-height: 142%;
-    letter-spacing: -0.6px;
-}
-
-.info-par {
-    color: $textDark;
-    font-family: $regular;
-    font-size: 14px;
-    line-height: 128%;
-    letter-spacing: 0.2px;
 }

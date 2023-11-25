@@ -23,12 +23,6 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 body {
   -webkit-tap-highlight-color: transparent;
   margin: 0;
@@ -38,37 +32,37 @@ main {
   background-color: #F8F8F8;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.title-reset,
+.par-reset {
   margin: 0;
   font-size: inherit;
   font-weight: inherit;
 }
 
-ul,
-li {
+.list-reset {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-a {
+.link-reset {
   text-decoration: none;
   color: inherit;
 }
 
-address {
+.address-reset {
   font-style: normal;
   font-weight: normal;
-}
-
-.container {
-  margin: 0 auto;
 }
 
 .logo {
@@ -153,22 +147,6 @@ address {
   border-radius: 6px;
 }
 
-.title {
-  color: #1B1C21;
-  font-family: "TTLakes Bold";
-  font-size: 28px;
-  line-height: 142%;
-  letter-spacing: -0.6px;
-}
-
-.info-par {
-  color: #1B1C21;
-  font-family: "TTLakes Regular";
-  font-size: 14px;
-  line-height: 128%;
-  letter-spacing: 0.2px;
-}
-
 .header[hidden] {
   display: none;
 }
@@ -214,9 +192,17 @@ address {
 }
 
 .info__title {
+  color: #1B1C21;
+  font-family: "TTLakes Bold";
+  font-size: 28px;
+  line-height: 142%;
+  letter-spacing: -0.6px;
+}
+
+.info__title--before {
   position: relative;
 }
-.info__title::before {
+.info__title--before::before {
   content: "";
   position: absolute;
   top: 0;
@@ -302,6 +288,14 @@ address {
   max-height: 90px;
   overflow-y: hidden;
   margin-bottom: 10px;
+}
+
+.info__par {
+  color: #1B1C21;
+  font-family: "TTLakes Regular";
+  font-size: 14px;
+  line-height: 128%;
+  letter-spacing: 0.2px;
 }
 
 .info__par:not(:last-child) {
@@ -420,11 +414,6 @@ address {
   align-items: center;
   margin-bottom: 40px;
 }
-@media screen and (max-height: 750px) {
-  .sidebar__header {
-    margin-bottom: 20px;
-  }
-}
 
 .sidebar__logo--margin-left {
   margin-left: 16px;
@@ -511,7 +500,7 @@ address {
     margin-bottom: 10px;
   }
   .info__img {
-    max-width: 380px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 1120px) {
@@ -525,5 +514,13 @@ address {
   }
   .info__buttons[hidden] {
     display: none;
+  }
+}
+@media screen and (max-height: 750px) {
+  .sidebar__contacts {
+    margin: 16px 0 16px 0;
+  }
+  .sidebar__header {
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=main.css.map */

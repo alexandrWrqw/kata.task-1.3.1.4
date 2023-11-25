@@ -48,7 +48,7 @@
     }
 
     .info__img {
-        max-width: 380px;
+        max-width: 480px;
     }
 }
 
@@ -66,5 +66,16 @@
 
     .info__buttons[hidden] {
         display: none;
+    }
+}
+
+// other 
+@media screen and (max-height: 750px) {
+    .sidebar__contacts {
+        margin: 16px 0 16px 0;
+    }
+
+    .sidebar__header {
+        margin-bottom: 20px;
     }
 }

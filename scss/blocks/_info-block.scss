@@ -12,6 +12,14 @@
 }
 
 .info__title {
+    color: $textDark;
+    font-family: $bold;
+    font-size: 28px;
+    line-height: 142%;
+    letter-spacing: -0.6px;
+}
+
+.info__title--before {
     position: relative;
 
     &::before {
@@ -106,6 +114,14 @@
     max-height: 90px;
     overflow-y: hidden;
     margin-bottom: 10px;
+}
+
+.info__par {
+    color: $textDark;
+    font-family: $regular;
+    font-size: 14px;
+    line-height: 128%;
+    letter-spacing: 0.2px;
 }
 
 .info__par:not(:last-child) {
