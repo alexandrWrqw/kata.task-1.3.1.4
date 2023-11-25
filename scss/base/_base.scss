@@ -89,7 +89,8 @@ main {
     background-color: transparent;
     cursor: pointer;
     flex-shrink: 0;
-    transition: background-color 0.1s ease-in;
+    transition: background-color 0.1s ease-in,
+                box-shadow 0.1s ease-in;
 
     &--circle {
         border-radius: 20px;
@@ -100,11 +101,47 @@ main {
 
         &:hover {
             background-color: $btnHover;
+
+            &.btn--arrow {
+                background-color: rgba(248, 198, 213, 0.34);
+                box-shadow: inset 0 0 3px 1px $btn;
+            }
+
+            &.btn--arrow::before {
+                width: 10px;
+                height: 10px;
+            }
         }
 
         &:focus {
             outline: 2px solid $btn;
             outline-offset: 2px;
+        }
+    }
+
+    &--arrow {
+        border: 2px solid $btn;
+
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-right: 2px solid $btn;
+            border-top: 2px solid $btn;
+            width: 9px;
+            height: 9px;
+            transform: translate(-65%, -50%) rotate(45deg);
+            border-radius: 2px;
+            transition: width 0.1s ease-in,
+                        height 0.1s ease-in;
+        }
+
+        &:focus {
+            outline: 2px solid $btn;
+            outline-offset: 1px;
         }
     }
 
@@ -172,4 +209,13 @@ main {
             border-radius: 6px;
         }
     }
+}
+
+.title-block {
+    color: $textLight;
+    font-family: $regular;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
 }

@@ -32,7 +32,6 @@
 }
 
 @media screen and (max-width: $tablet) {
-
     .header__buttons-contact,
     .header__item--line:first-of-type::before {
         display: none;
@@ -49,6 +48,17 @@
 
     .info__img {
         max-width: 480px;
+    }
+}
+
+// swiper brands-block
+@media screen and (max-width: $tablet) {
+    .brands__list {
+        max-height: 82px;
+    }
+
+    .brands__show-btn {
+        display: none;
     }
 }
 
