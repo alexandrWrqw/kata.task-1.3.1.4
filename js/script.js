@@ -47,6 +47,9 @@ window.addEventListener('DOMContentLoaded', () => {
                     slidesPerView: 1.6,
                 },
             },
+            autoplay: {
+                delay: 1500,
+            },
         }
     );
 });
