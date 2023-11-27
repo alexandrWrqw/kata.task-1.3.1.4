@@ -204,6 +204,9 @@ main {
 .btn--show:hover {
   color: #797a7d;
 }
+.btn--show--active::before {
+  transform: rotate(180deg);
+}
 
 .header[hidden] {
   display: none;

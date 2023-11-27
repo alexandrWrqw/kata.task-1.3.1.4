@@ -90,7 +90,7 @@ main {
     cursor: pointer;
     flex-shrink: 0;
     transition: background-color 0.1s ease-in,
-                box-shadow 0.1s ease-in;
+        box-shadow 0.1s ease-in;
 
     &--circle {
         border-radius: 20px;
@@ -136,7 +136,7 @@ main {
             transform: translate(-65%, -50%) rotate(45deg);
             border-radius: 2px;
             transition: width 0.1s ease-in,
-                        height 0.1s ease-in;
+                height 0.1s ease-in;
         }
 
         &:focus {
@@ -239,5 +239,9 @@ main {
 
     &:hover {
         color: $darkHover;
+    }
+
+    &--active::before {
+        transform: rotate(180deg);
     }
 }

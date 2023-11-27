@@ -59,6 +59,7 @@ const showBrands = document.querySelector('.brands__show-btn');
 const listBrands = document.querySelector('.brands__list');
 
 showBrands.addEventListener('click', function() {
+    this.classList.toggle('btn--show--active');
     listBrands.classList.toggle('brands__list--visible');
     this.textContent = this.textContent === 'Показать все' ? 'Скрыть' : 'Показать все';
 });
