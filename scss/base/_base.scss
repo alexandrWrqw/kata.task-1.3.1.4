@@ -219,3 +219,25 @@ main {
     text-transform: uppercase;
     margin-bottom: 40px;
 }
+
+.show-btn {
+    color: $textDark;
+    font-family: $medium;
+    letter-spacing: -0.2px;
+    line-height: 150%;
+    display: flex;
+    padding: 0 5px;
+
+    &::before {
+        content: '';
+        display: block;
+        background: url('./../img/info-block/expand.svg') no-repeat;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+
+    &:hover {
+        color: $darkHover;
+    }
+}
