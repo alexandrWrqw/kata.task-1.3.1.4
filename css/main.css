@@ -185,7 +185,7 @@ main {
   margin-bottom: 40px;
 }
 
-.show-btn {
+.btn--show {
   color: #1B1C21;
   font-family: "TTLakes Medium";
   letter-spacing: -0.2px;
@@ -193,7 +193,7 @@ main {
   display: flex;
   padding: 0 5px;
 }
-.show-btn::before {
+.btn--show::before {
   content: "";
   display: block;
   background: url("./../img/info-block/expand.svg") no-repeat;
@@ -201,7 +201,7 @@ main {
   height: 24px;
   margin-right: 8px;
 }
-.show-btn:hover {
+.btn--show:hover {
   color: #797a7d;
 }
 
