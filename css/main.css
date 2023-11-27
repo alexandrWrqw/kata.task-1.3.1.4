@@ -182,7 +182,9 @@ main {
   line-height: 150%;
   letter-spacing: -0.2px;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  padding: 16px;
+  background-color: white;
+  border-top: 1px solid #D9FFF5;
 }
 
 .btn--show {
@@ -192,6 +194,7 @@ main {
   line-height: 150%;
   display: flex;
   padding: 0 5px;
+  margin-top: 24px;
 }
 .btn--show::before {
   content: "";
@@ -206,6 +209,12 @@ main {
 }
 .btn--show--active::before {
   transform: rotate(180deg);
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #B5B6BC;
 }
 
 .header[hidden] {
@@ -499,8 +508,8 @@ main {
   border-radius: 6px;
 }
 
-.brands {
-  padding: 15px 32px 34px 32px;
+.brands__container {
+  padding: 16px;
 }
 
 .brands__list {
@@ -510,7 +519,6 @@ main {
   -moz-column-gap: 30px;
        column-gap: 30px;
   row-gap: 16px;
-  margin-bottom: 24px;
   max-height: 160px;
   overflow-y: hidden;
 }
@@ -537,12 +545,6 @@ main {
   top: 50%;
   right: 16px;
   transform: translateY(-50%);
-}
-
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #B5B6BC;
 }
 
 @media screen and (min-width: 320px) {

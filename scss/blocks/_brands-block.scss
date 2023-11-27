@@ -1,5 +1,5 @@
-.brands {
-    padding: 15px 32px 34px 32px;
+.brands__container {
+    padding: 16px;
 }
 
 .brands__list {
@@ -8,7 +8,6 @@
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     column-gap: 30px;
     row-gap: 16px;
-    margin-bottom: 24px;
     max-height: 160px;
     overflow-y: hidden;
 
@@ -36,10 +35,4 @@
     top: 50%;
     right: 16px;
     transform: translateY(-50%);
-}
-
-.swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color:#B5B6BC;
 }

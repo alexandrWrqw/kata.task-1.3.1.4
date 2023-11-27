@@ -217,7 +217,9 @@ main {
     line-height: 150%;
     letter-spacing: -0.2px;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    padding: 16px;
+    background-color: white;
+    border-top: 1px solid #D9FFF5;
 }
 
 .btn--show {
@@ -227,6 +229,7 @@ main {
     line-height: 150%;
     display: flex;
     padding: 0 5px;
+    margin-top: 24px;
 
     &::before {
         content: '';
@@ -244,4 +247,10 @@ main {
     &--active::before {
         transform: rotate(180deg);
     }
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color:#B5B6BC;
 }
