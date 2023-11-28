@@ -211,12 +211,6 @@ main {
   transform: rotate(180deg);
 }
 
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #B5B6BC;
-}
-
 .header[hidden] {
   display: none;
 }
@@ -567,6 +561,11 @@ main {
   }
   .brands__show-btn {
     display: none;
+  }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #B5B6BC;
   }
 }
 @media screen and (min-width: 768px) {
