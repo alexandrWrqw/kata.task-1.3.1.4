@@ -549,7 +549,6 @@ main {
 @media screen and (max-width: 580px) {
   .brands__list {
     display: flex;
-    box-sizing: content-box;
     -moz-column-gap: 0;
          column-gap: 0;
     row-gap: 0;
@@ -566,6 +565,19 @@ main {
     width: 12px;
     height: 12px;
     background-color: #B5B6BC;
+  }
+  .slider-brands {
+    position: relative;
+  }
+  .slider-brands::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24px;
+    height: 72px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0) 100%);
+    z-index: 2;
   }
 }
 @media screen and (min-width: 768px) {

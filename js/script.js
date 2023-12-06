@@ -38,13 +38,13 @@ window.addEventListener('DOMContentLoaded', () => {
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 1.3,
                 },
                 360: {
-                    slidesPerView: 1.2,
-                },
-                420: {
                     slidesPerView: 1.6,
+                },
+                470: {
+                    slidesPerView: 2,
                 },
             },
             autoplay: {
