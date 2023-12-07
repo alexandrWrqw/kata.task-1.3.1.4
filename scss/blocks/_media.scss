@@ -19,7 +19,7 @@
         height: 112px;
     }
 
-    .brands__show-btn {
+    .btn-show {
         display: none;
     }
 
@@ -62,7 +62,6 @@
     }
 
     .info__text {
-        max-height: 160px;
         min-width: 312px;
     }
 
@@ -86,6 +85,10 @@
         margin-bottom: 10px;
     }
 
+    .info__text {
+        max-height: 90px;
+    }
+
     .info__img {
         max-width: 480px;
     }
@@ -93,6 +96,23 @@
 
 // desktop 1120
 @media screen and (min-width: $desktop-S) {
+    .container {
+        max-width: 1439px; 
+        padding-left: 320px;
+    }
+
+    .sidebar {
+        display: flex;
+    }
+    
+    .sidebar__close-btn {
+        display: none;
+    }
+
+    .sidebar__logo--margin-left {
+        margin-left: 0;
+    }
+    
     .info__slider {
         flex-wrap: wrap;
     }

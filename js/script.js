@@ -54,12 +54,24 @@ window.addEventListener('DOMContentLoaded', () => {
     );
 });
 
-// show btn
-const showBrands = document.querySelector('.brands__show-btn');
+// info block read btn 
+const infoContent = document.querySelector('.info__text-wrapper');
+const text = infoContent.querySelector('.info__text');
+const readBtn = infoContent.querySelector('.btn--more');
+
+readBtn.addEventListener('click', function() {
+    this.classList.toggle('btn--more--active');
+    text.classList.toggle('info__text--visible');
+    this.textContent = this.textContent === 'Читать далее' ? 'Скрыть' : 'Читать далее';
+});
+
+
+// brands block show btn
+const showBtn = document.querySelector('.btn-show');
 const listBrands = document.querySelector('.brands__list');
 
-showBrands.addEventListener('click', function() {
-    this.classList.toggle('btn--show--active');
+showBtn.addEventListener('click', function() {
+    this.classList.toggle('btn--more--active');
     listBrands.classList.toggle('brands__list--visible');
     this.textContent = this.textContent === 'Показать все' ? 'Скрыть' : 'Показать все';
 });

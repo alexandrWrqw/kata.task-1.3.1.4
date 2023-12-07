@@ -111,9 +111,14 @@
 }
 
 .info__text {
-    max-height: 90px;
+    max-height: 160px;
     overflow-y: hidden;
     margin-bottom: 10px;
+
+    &--visible {
+        max-height: none !important;
+        overflow-y: visible;
+    }
 }
 
 .info__par {

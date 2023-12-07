@@ -5,11 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS</title>
+    <link rel="stylesheet" 
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <div class="container">
+        <aside class="sidebar">
+            <header class="sidebar__header">
+                <button class="btn btn--circle btn--close-icon sidebar__close-btn" type="button"></button>
+                <div class="logo sidebar__logo--margin-left">
+                    <img src="./img/logo/logo.svg" alt="logo CPS" aria-hidden="true">
+                </div>
+                <button class="btn btn--circle btn--search-icon" type="button"></button>
+            </header>
+            <nav class="nav sidebar__nav">
+                <ul class="list-reset nav__list">
+                    <li class="nav__item">
+                        <a class="link-reset nav__link" href="#!">Ремонт техники</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a class="link-reset nav__link" href="#!">Услуги и сервисы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link-reset nav__link" href="#!">Корпоративным клиентам</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link-reset nav__link" href="#!">Продавцам техники</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link-reset nav__link" href="#!">Партнерам</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link-reset nav__link" href="#!">Производителям</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link-reset nav__link" href="#!">Наши сервисные центры</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link-reset nav__link" href="#!">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <footer class="sidebar__footer">
+                <div class="buttons-contact">
+                    <button class="btn btn--circle btn--phone-icon" type="button"></button>
+                    <button class="btn btn--circle btn--mess-icon" type="button"></button>
+                    <button class="btn btn--circle btn--reg-icon" type="button"></button>
+                </div>
+                <address class="address-reset sidebar__contacts">
+                    <a class="link-reset sidebar__mail" href="mailto:mail@cps.com">mail@cps.com</a>
+                    <a class="link-reset sidebar__tel" href="tel:+78008908900">8 800 890 8900</a>
+                </address>
+                <ul class="list-reset lang-list">
+                    <li class="lang-list__item">
+                        <button class="btn lang-list__btn lang-list__btn--active">ru</button>
+                    </li>
+                    <li class="lang-list__item">
+                        <button class="btn lang-list__btn">en</button>
+                    </li>
+                    <li class="lang-list__item">
+                        <button class="btn lang-list__btn">ch</button>
+                    </li>
+                </ul>
+            </footer>
+        </aside>
 
         <header hidden class="header">
             <button class="btn btn--circle btn--burger-icon" type="button"></button>
@@ -79,17 +140,79 @@
                                 что подтверждает большое количество постоянных клиентов.
                                 Мы гордимся тем, что к нам обращаются по рекомендациям и,
                                 в свою очередь, советуют нас родным и близким.</p>
+                            <p class="par-reset info__par">Мы успешно работаем с
+                                1992 года и заслужили репутацию надежного партнера,
+                                что подтверждает большое количество постоянных клиентов.
+                                Мы гордимся тем, что к нам обращаются по рекомендациям и,
+                                в свою очередь, советуют нас родным и близким.</p>
                         </div>
-                        <button class="btn btn--show" type="button">Читать далее</button>
+                        <button class="btn btn--more" type="button">Читать далее</button>
                     </div>
                     <div class="info__img-wrapper">
                         <img class="info__img" src="./img/info-block/CPS.png" alt="CPS" aria-hidden="true">
                     </div>
                 </article>
             </section>
-        </main>
 
+            <section class="brands">
+                <h3 class="title-reset title-block">Ремонт техники различных брендов</h3>
+                <div class="brands__container">
+                    <div class="swiper slider-brands">
+                        <ul class="list-reset brands__list swiper-wrapper">
+                            <li class="brands__item swiper-slide">
+                                <img class="brands__logo" src="./img/brands/lenovo.svg" alt="Бренд 'Lenovo'">
+                                <button class="btn btn--circle btn--arrow brands__btn" type="button"></button>
+                            </li>
+                            <li class="brands__item swiper-slide">
+                                <img class="brands__logo" src="./img/brands/samsung.svg" alt="Бренд 'Samsung'">
+                                <button class="btn btn--circle btn--arrow brands__btn" type="button"></button>
+                            </li>
+                            <li class="brands__item swiper-slide">
+                                <img class="brands__logo" src="./img/brands/apple.svg" alt="Бренд 'Apple'">
+                                <button class="btn btn--circle btn--arrow brands__btn" type="button"></button>
+                            </li>
+                            <li class="brands__item swiper-slide">
+                                <img class="brands__logo" src="./img/brands/sonic.svg" alt="Бренд 'Sonic'">
+                                <button class="btn btn--circle btn--arrow brands__btn" type="button"></button>
+                            </li>
+                            <li class="brands__item swiper-slide">
+                                <img class="brands__logo" src="./img/brands/bosh.svg" alt="Бренд 'Bosh'">
+                                <button class="btn btn--circle btn--arrow brands__btn" type="button"></button>
+                            </li>
+                            <li class="brands__item swiper-slide">
+                                <img class="brands__logo" src="./img/brands/hp.svg" alt="Бренд 'HP'">
+                                <button class="btn btn--circle btn--arrow brands__btn" type="button"></button>
+                            </li>
+                            <li class="brands__item swiper-slide">
+                                <img class="brands__logo" src="./img/brands/acer.svg" alt="Бренд 'Acer'">
+                                <button class="btn btn--circle btn--arrow brands__btn" type="button"></button>
+                            </li>
+                            <li class="brands__item swiper-slide">
+                                <img class="brands__logo" src="./img/brands/sony.svg" alt="Бренд 'Sony'">
+                                <button class="btn btn--circle btn--arrow brands__btn" type="button"></button>
+                            </li>
+                            <li class="brands__item swiper-slide">
+                                <img class="brands__logo" src="./img/brands/lenovo.svg" alt="Бренд 'Lenovo'">
+                                <button class="btn btn--circle btn--arrow brands__btn" type="button"></button>
+                            </li>
+                            <li class="brands__item swiper-slide">
+                                <img class="brands__logo" src="./img/brands/samsung.svg" alt="Бренд 'Samsung'">
+                                <button class="btn btn--circle btn--arrow brands__btn" type="button"></button>
+                            </li>
+                            <li class="brands__item swiper-slide">
+                                <img class="brands__logo" src="./img/brands/apple.svg" alt="Бренд 'Apple'">
+                                <button class="btn btn--circle btn--arrow brands__btn" type="button"></button>
+                            </li>
+                        </ul>
+                        <div class="brands__pagination swiper-pagination"></div>
+                    </div>
+                    <button class="btn btn--more btn-show">Показать все</button>
+                </div>
+            </section>
+        </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

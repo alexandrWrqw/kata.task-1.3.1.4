@@ -1,14 +1,15 @@
 .sidebar {
     width: 320px;
     padding: 18px 24px;
-    box-shadow:
-        16px 0px 52px 0px rgba(14, 24, 80, 0.20),
-        -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    // box-shadow:
+    //     16px 0px 52px 0px rgba(14, 24, 80, 0.20),
+    //     -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 
     position: fixed;
+    transform: translateX(-320px);
     height: 100vh;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
 
